@@ -51,7 +51,7 @@ def test_suite():
     test(countword5(mylist2)==5)
     test(sum_to_even(mylist)==8)
     test(before_sam(mylist2)==3)
-    test(before_sam(listnosam)==4)
+/    test(before_sam(listnosam)==4)
 
 
 
