@@ -106,5 +106,40 @@ def find2(strng, ch, start):
             return ix
         ix += 1
     return -1
-
 print(find2("banana", "a", 3))
+
+def find(strng, ch, start=0):
+    ix = start
+    while ix < len(strng):
+        if strng[ix] == ch:
+            return ix
+        ix += 1
+    return -1
+print(find("banana", "a"))
+
+def find3(strng, ch, start=0, end=None):
+    ix = start
+    if end is None:
+       end = len(strng)
+    while ix < end:
+        if strng[ix] == ch:
+            return ix
+        ix += 1
+    return -1
+
+ss = "Python strings have some interesting methods."
+print(find(ss, "s"))
+print(find2(ss, "s", 7))
+print(find2(ss, "s", 8))
+print(find3(ss, "s", 8, 13))
+print(find(ss, ".") == len(ss)-1)
+
+#8.13
+print(ss.find("s"))
+print(ss.find("s", 7))
+print(ss.find("s", 8))
+print(ss.find("s", 8, 13))
+print(ss.find("."))
+
+print("banana".find("nan"))
+print("banana".find("na",3))
