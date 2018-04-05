@@ -12,7 +12,7 @@ tess = turtle.Turtle()
 
 wison = turtle.Turtle()
 
-dude = turtle.Turtle()
+goubi = turtle.Turtle()
 
 
 def draw_housing():
@@ -72,17 +72,17 @@ wison.shapesize(3)
 
 wison.fillcolor("red")
 
-dude.forward(40)
+goubi.forward(40)
 
-dude.left(90)
+goubi.left(90)
 
-dude.forward(120)
+goubi.forward(120)
 
-dude.shape("circle")
+goubi.shape("circle")
 
-dude.shapesize(3)
+goubi.shapesize(3)
 
-dude.fillcolor("orange")
+goubi.fillcolor("orange")
 
 state_num = 2
 
@@ -96,7 +96,7 @@ def advance_state_machine():
 
         wison.fillcolor("black")
 
-        dude.fillcolor("orange")
+        goubi.fillcolor("orange")
 
         state_num = 1
 
@@ -104,7 +104,7 @@ def advance_state_machine():
 
         tess.fillcolor("black")
 
-        dude.fillcolor("black")
+        goubi.fillcolor("black")
 
         wison.fillcolor("red")
 
@@ -114,7 +114,7 @@ def advance_state_machine():
 
         wison.fillcolor("black")
 
-        dude.fillcolor("black")
+        goubi.fillcolor("black")
 
         tess.fillcolor("green")
 
