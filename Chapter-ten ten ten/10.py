@@ -20,7 +20,7 @@ def draw_housing():
 
     tess.pensize(3)
 
-    tess.color("black", "darkgrey")
+    tess.color("black", "darkgrey")6
 
     tess.begin_fill()
 
@@ -64,7 +64,7 @@ def advance_state_machine():
 
         state_num = 1
 
-        wn.ontimer(advance_state_machine, 60)
+        wn.ontimer(advance_state_machine, 100)
 
     elif state_num == 1:
 
